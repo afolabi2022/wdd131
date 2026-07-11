@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive photo album of temples from around the world.">
+    <meta name="author" content="Emmanuel">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS: mobile-first order -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JS -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <p class="site-title">Temple Album</p>
+
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-icon">&#9776;</span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/temple1.jpg" alt="San Diego California Temple" loading="lazy" width="400" height="300">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="300">
+                <figcaption>Salt Lake</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.jpg" alt="Provo City Center Temple" loading="lazy" width="400" height="300">
+                <figcaption>Provo City Center</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.jpg" alt="Accra Ghana Temple" loading="lazy" width="400" height="300">
+                <figcaption>Accra Ghana</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="300">
+                <figcaption>Aba Nigeria</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jpg" alt="Rome Italy Temple" loading="lazy" width="400" height="300">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.jpg" alt="Tokyo Japan Temple" loading="lazy" width="400" height="300">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.jpg" alt="London England Temple" loading="lazy" width="400" height="300">
+                <figcaption>London England</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple9.jpg" alt="Freiberg Germany Temple" loading="lazy" width="400" height="300">
+                <figcaption>Freiberg Germany</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span>🌺 Emmanuel Ojo Afolabi 🌺 Liberia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

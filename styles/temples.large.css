@@ -1,0 +1,64 @@
+@media screen and (min-width: 700px) {
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        padding: 0;
+        gap: 0.25rem;
+    }
+
+    .primary-nav li {
+        width: auto;
+    }
+
+    .primary-nav a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    .primary-nav a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0.3rem;
+        width: 0;
+        height: 2px;
+        background-color: var(--gold-spire);
+        transition: width 0.25s ease, left 0.25s ease;
+    }
+
+    .primary-nav a:hover::after,
+    .primary-nav a:focus-visible::after {
+        width: 60%;
+        left: 20%;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a:focus-visible {
+        background-color: transparent;
+        color: var(--gold-spire);
+    }
+
+    main {
+        padding-top: 2.5rem;
+    }
+
+    main h1 {
+        font-size: 2.6rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+    }
+}

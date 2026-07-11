@@ -1,0 +1,158 @@
+:root {
+    --indigo-dusk: #2b2140;
+    --gold-spire: #c9973b;
+    --stone-cream: #f7f3ec;
+    --stone-text: #3f3a44;
+    --ivory: #fffdf9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--stone-cream);
+    color: var(--stone-text);
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background-color: var(--indigo-dusk);
+    color: var(--ivory);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.25rem;
+    position: relative;
+}
+
+.site-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.03em;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    color: var(--ivory);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.hamburger-icon {
+    display: inline-block;
+}
+
+.primary-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--indigo-dusk);
+    z-index: 10;
+}
+
+.primary-nav.open {
+    display: block;
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-nav li {
+    width: 100%;
+}
+
+.primary-nav a {
+    display: block;
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible {
+    background-color: rgba(201, 151, 59, 0.18);
+    color: var(--gold-spire);
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2.5rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--indigo-dusk);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    background-color: var(--ivory);
+    border: 1px solid rgba(43, 33, 64, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(43, 33, 64, 0.08);
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.6rem 0.5rem;
+    font-weight: 600;
+    color: var(--indigo-dusk);
+    border-top: 2px solid var(--gold-spire);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--indigo-dusk);
+    color: var(--ivory);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
