@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawaii - Paradise Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌺 Hawaii</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <!-- Mobile/small screen -->
+                <source media="(max-width: 600px)" srcset="https://picsum.photos/id/1015/600/400.webp"
+                    type="image/webp">
+                <!-- Larger screen -->
+                <source media="(min-width: 601px)" srcset="https://picsum.photos/id/1015/1200/600.webp"
+                    type="image/webp">
+                <img src="https://picsum.photos/id/1015/1200/600.jpg"
+                    alt="Beautiful Hawaii beach with turquoise water and palm trees" class="hero-image">
+            </picture>
+            <div class="hero-content">
+                <h1>Discover Hawaii</h1>
+                <p>The Aloha State</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Hawaii</h2>
+            <div class="about-content">
+                <p>Hawaii is a tropical paradise known for its stunning beaches, vibrant culture, and rich history. From
+                    the active volcanoes of the Big Island to the lush rainforests of Kauai, each island offers unique
+                    experiences.</p>
+                <ul>
+                    <li>🌋 Volcanoes National Park</li>
+                    <li>🏄‍♂️ World-class surfing</li>
+                    <li>🥥 Fresh local cuisine</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-grid">
+                <!-- Mobile view uses SVG -->
+                <div class="weather-icon-mobile">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 3V6M12 18V21M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M3 12H6M18 12H21M7.76 16.24L4.93 19.07M16.24 7.76L19.07 4.93"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="12" cy="12" r="5" fill="#FFD700" />
+                    </svg>
+                </div>
+
+                <div class="weather-info">
+                    <div class="temp">78°F</div>
+                    <div class="condition">Sunny with light trade winds</div>
+                    <div class="details">
+                        <p>Humidity: 65%</p>
+                        <p>Wind: 8 mph</p>
+                    </div>
+                    <div class="wind-chill">
+                        Wind Chill: <span id="windChill">N/A</span>
+                    </div>
+                </div>
+
+                <!-- Wider view pseudo-element weather icon (styled in CSS) -->
+                <div class="weather-icon-wide">⛅</div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities">
+            <h2>Top Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>Surfing</h3>
+                    <p>Ride the famous waves at Waikiki Beach.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Hiking</h3>
+                    <p>Explore Diamond Head Crater.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Snorkeling</h3>
+                    <p>Discover vibrant marine life in Hanauma Bay.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Hawaii Explorer | Last Modified: <span id="lastModified"></span></p>
+        <p>Built for WDD131 Assignment</p>
+    </footer>
+</body>
+
+</html>
