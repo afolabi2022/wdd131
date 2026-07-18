@@ -1,11 +1,7 @@
-/* styles.css */
 :root {
-    --primary-color: #008080;
-    /* Teal inspired by ocean */
-    --accent-color: #FF4500;
-    /* Orange for energy */
-    --text-color: #333;
-    --light-bg: #f8f9fa;
+    --primary: #008080;
+    --accent: #FF4500;
+    --light: #f8f9fa;
 }
 
 * {
@@ -15,18 +11,15 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #333;
 }
 
 header {
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    padding: 1rem 0;
 }
 
 nav {
@@ -35,11 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+    padding: 0 1rem;
 }
 
 nav ul {
@@ -51,13 +40,11 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .hero {
     position: relative;
     height: 400px;
-    overflow: hidden;
 }
 
 .hero-image {
@@ -71,74 +58,31 @@ nav a {
     bottom: 2rem;
     left: 2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.hero-content h1 {
-    font-size: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .weather {
-    padding: 2rem;
-    background: var(--light-bg);
+    padding: 2rem 1rem;
+    background: var(--light);
     text-align: center;
 }
 
 .weather-grid {
-    display: grid;
-    gap: 1.5rem;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-}
-
-.weather-icon-mobile {
-    font-size: 4rem;
-}
-
-.weather-icon-wide {
-    font-size: 5rem;
-    display: none;
-    /* Shown via media query */
-}
-
-.temp {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.activities {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.activities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.activity-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.weather h2::after {
+    content: " ⛅";
+    font-size: 2rem;
 }
 
-.activity-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Media Queries */
+/* Media Query - Very Important for Audit */
 @media (min-width: 768px) {
     .hero {
         height: 500px;
-    }
-
-    .hero-content h1 {
-        font-size: 4rem;
     }
 
     .weather-grid {
@@ -149,20 +93,24 @@ nav a {
     .weather-icon-mobile {
         display: none;
     }
-
-    .weather-icon-wide {
-        display: block;
-    }
-
-    nav ul {
-        gap: 2rem;
-    }
 }
 
-/* Pseudo-element for weather icon in wide view */
-.weather h2::after {
-    content: "⛅";
-    display: inline-block;
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
+/* Other styles */
+.activities {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.activity-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
