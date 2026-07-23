@@ -1,92 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Discover the beauty of Hawaii - beaches, volcanoes, culture, and tropical adventures in the Aloha State.">
-    <meta name="author" content="Your Name Here">
-    <title>Hawaii - Paradise Awaits</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Liberia page by Emmanuel Afolabi">
+    <meta name="author" content="Emmanuel Afolabi">
+
+    <title>Place - Liberia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <div class="logo">🌺 Hawaii</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#activities">Activities</a></li>
-            </ul>
-        </nav>
+        <h1>Liberia</h1>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 600px)" srcset="https://picsum.photos/id/1015/600/400.webp"
-                    type="image/webp">
-                <source media="(min-width: 601px)" srcset="https://picsum.photos/id/1015/1200/600.webp"
-                    type="image/webp">
-                <img src="https://picsum.photos/id/1015/1200/600.jpg"
-                    alt="Beautiful Hawaii beach with turquoise water and palm trees" class="hero-image">
-            </picture>
-            <div class="hero-content">
-                <h1>Discover Hawaii</h1>
-                <p>The Aloha State</p>
-            </div>
+
+        <picture class="hero">
+            <source media="(min-width:768px)" srcset="images/liberia-large.webp">
+            <img src="images/liberia-small.webp" alt="Beautiful view of Liberia">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <p><strong>Capital:</strong> Monrovia</p>
+            <p><strong>Population:</strong> 5.4 Million</p>
+            <p><strong>Area:</strong> 111,369 km²</p>
+            <p><strong>Language:</strong> English</p>
+            <p><strong>Currency:</strong> Liberian Dollar (LRD)</p>
+            <p><strong>Time Zone:</strong> GMT</p>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Hawaii</h2>
-            <div class="about-content">
-                <p>Hawaii is a tropical paradise known for its stunning beaches, vibrant culture, and rich history.</p>
-            </div>
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
         </section>
 
-        <!-- Weather Section -->
-        <section id="weather" class="weather">
-            <h2>Current Weather</h2>
-            <div class="weather-grid">
-                <div class="weather-icon-mobile">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="5" fill="#FFD700" />
-                        <path d="M12 3V6M12 18V21" stroke="#FFD700" stroke-width="2" />
-                    </svg>
-                </div>
-
-                <div class="weather-info">
-                    <div class="temp">78°F</div>
-                    <div class="condition">Sunny • Light Trade Winds</div>
-                    <div class="wind-chill">
-                        Wind Chill: <span id="windChill">N/A</span>
-                    </div>
-                </div>
-
-                <div class="weather-icon-wide">⛅</div>
-            </div>
-        </section>
-
-        <!-- Activities -->
-        <section id="activities" class="activities">
-            <h2>Top Activities</h2>
-            <div class="activities-grid">
-                <div class="activity-card">Surfing at Waikiki</div>
-                <div class="activity-card">Hiking Diamond Head</div>
-                <div class="activity-card">Snorkeling in Hanauma Bay</div>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Hawaii Explorer | Last Modified: <span id="lastModified"></span></p>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Emmanuel O. Afolabi | Liberia
+        </p>
+
+        <p id="lastModified"></p>
+
     </footer>
+
 </body>
 
 </html>
