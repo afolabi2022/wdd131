@@ -41,7 +41,16 @@ header h1 {
     cursor: pointer;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* ---------- NAVIGATION --------- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #1f3b5c;
+    padding: 1rem;
+}
 
 .navigation {
     display: none;
