@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation a {
+        flex: 1;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header h1 {
+        padding: 1.5rem;
+    }
+
+}
