@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form">
+    <meta name="description"
+        content="Submit a review for your product by rating its quality, selecting useful features, choosing the installation date, and sharing your experience.">
     <meta name="author" content="Emmanuel O. Afolabi">
 
     <title>Product Review Form</title>
@@ -44,30 +45,20 @@
 
                 <p>Overall Rating *</p>
 
-                <label>
-                    <input type="radio" name="rating" id="one" value="1" required>
-                    ☆ 1
-                </label>
+                <input type="radio" id="one" name="rating" value="1" required>
+                <label for="one">☆ 1</label>
 
-                <label>
-                    <input type="radio" name="rating" id="two" value="2">
-                    ☆☆ 2
-                </label>
+                <input type="radio" id="two" name="rating" value="2" required>
+                <label for="two">☆☆ 2</label>
 
-                <label>
-                    <input type="radio" name="rating" id="three" value="3">
-                    ☆☆☆ 3
-                </label>
+                <input type="radio" id="three" name="rating" value="3" required>
+                <label for="three">☆☆☆ 3</label>
 
-                <label>
-                    <input type="radio" name="rating" id="four" value="4">
-                    ☆☆☆☆ 4
-                </label>
+                <input type="radio" id="four" name="rating" value="4" required>
+                <label for="four">☆☆☆☆ 4</label>
 
-                <label>
-                    <input type="radio" name="rating" id="five" value="5">
-                    ☆☆☆☆☆ 5
-                </label>
+                <input type="radio" id="five" name="rating" value="5" required>
+                <label for="five">☆☆☆☆☆ 5</label>
 
             </div>
 
@@ -89,29 +80,20 @@
 
                 <p>Useful Features</p>
 
-                <label>
-                    <input type="checkbox" name="features" id="durability" value="Durability">
+                <p>Useful Features</p>
+                <small>(Check all that apply)</small>
 
-                    Durability
-                </label>
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
 
-                <label>
-                    <input type="checkbox" name="features" id="ease" value="Ease of Use">
+                <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                <label for="ease">Ease of Use</label>
 
-                    Ease of Use
-                </label>
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
 
-                <label>
-                    <input type="checkbox" name="features" id="performance" value="Performance">
-
-                    Performance
-                </label>
-
-                <label>
-                    <input type="checkbox" name="features" id="design" value="Design">
-
-                    Design
-                </label>
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
 
             </div>
 
