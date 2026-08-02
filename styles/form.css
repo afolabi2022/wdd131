@@ -1,0 +1,131 @@
+/* ---------- GENERAL ---------- */
+
+:root {
+    --primary: #3b0a45;
+    --secondary: #ece7ed;
+    --white: #ffffff;
+    --black: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: var(--black);
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* ---------- FORM ---------- */
+
+form {
+    background: var(--secondary);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+label,
+p {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ---------- RADIO ---------- */
+
+.form-group label input[type="radio"] {
+    margin-right: .4rem;
+}
+
+.form-group label {
+    margin-bottom: .6rem;
+}
+
+/* ---------- CHECKBOX ---------- */
+
+.form-group input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+/* ---------- SUBMIT ---------- */
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: .9;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: .3rem 0;
+}
+
+/* ---------- LARGE SCREEN ---------- */
+
+@media (min-width: 768px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+}
